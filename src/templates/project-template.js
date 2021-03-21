@@ -37,7 +37,9 @@ const ProjectTemplate = ({
               </div>
             </div>
           </article>
-          <p>{description.description}</p>
+          <div className="description">
+            <p>{description.description}</p>
+          </div>
         </section>
       </section>
     </Layout>

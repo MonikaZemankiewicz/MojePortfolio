@@ -953,3 +953,17 @@ Single Project Template
   margin: 0 auto;
   max-width: 1170px;
 }
+
+.single-project p {
+  margin: 1rem;
+}
+
+.description {
+  background: inherit;
+  overflow: hidden;
+  padding: 1rem 2rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  margin-bottom: 3rem;
+}
