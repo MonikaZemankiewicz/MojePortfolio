@@ -82,7 +82,7 @@ h1 {
   opacity: 0.9;
   text-align: center;
   font-size: 2rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", serif;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", serif;
   margin-bottom: 3rem;
   margin-top: 3rem;
   -webkit-filter: drop-shadow(10px 10px 10px rgb(153, 148, 148));
@@ -92,7 +92,7 @@ h1 {
 
 @media screen and (min-width: 500px) {
   h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 4rem;
     margin-top: 0rem;
   }
@@ -101,7 +101,7 @@ h1 {
 h2 {
   color: white;
   text-align: center;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", serif;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", serif;
   font-weight: 700;
   font-size: 2rem;
   letter-spacing: 0.1rem;
@@ -114,7 +114,7 @@ h2 {
 }
 @media screen and (min-width: 500px) {
   h2 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
@@ -950,7 +950,7 @@ Single Project Template
 
 .single-project {
   width: 90vw;
-  margin: 0 auto;
+  margin: 2rem auto;
   max-width: 1170px;
 }
 
@@ -966,4 +966,5 @@ Single Project Template
   background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
   margin-bottom: 3rem;
+  margin-top: -2rem;
 }
