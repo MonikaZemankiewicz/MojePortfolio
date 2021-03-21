@@ -82,7 +82,7 @@ h1 {
   opacity: 0.9;
   text-align: center;
   font-size: 2rem;
-  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", serif;
+  font-family: "Open Sans", sans-serif;
   margin-bottom: 3rem;
   margin-top: 3rem;
   -webkit-filter: drop-shadow(10px 10px 10px rgb(153, 148, 148));
@@ -101,7 +101,7 @@ h1 {
 h2 {
   color: white;
   text-align: center;
-  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 2rem;
   letter-spacing: 0.1rem;
