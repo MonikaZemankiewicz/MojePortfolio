@@ -70,26 +70,50 @@ h1 {
   color: white;
   opacity: 0.9;
   text-align: center;
-  font-size: 4rem;
+  font-size: 2rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", serif;
-  margin-bottom: 5rem;
-  margin-top: 5rem;
-  -webkit-filter: drop-shadow(5px 5px 5px rgb(153, 148, 148));
-  filter: drop-shadow(5px 5px 5px rgb(153, 148, 148));
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  -webkit-filter: drop-shadow(10px 10px 10px rgb(153, 148, 148));
+  filter: drop-shadow(10px 10px 10px rgb(153, 148, 148));
   opacity: 0.8;
+}
+
+@media screen and (min-width: 500px) {
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+    margin-top: 0rem;
+  }
 }
 
 h2 {
   color: white;
   text-align: center;
-  font-family:'Open Sans', sans-serif;
+  font-family: "Sacramento";
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: 0.1rem;
-  -webkit-filter: drop-shadow(5px 5px 5px rgb(153, 148, 148));
-  filter: drop-shadow(5px 5px 5px rgb(153, 148, 148));
-  opacity: 0.8;
+  -webkit-filter: drop-shadow(5px 5px 5px rgb(160, 151, 151));
+  filter: drop-shadow(5px 5px 5px rgb(160, 151, 151));
+  opacity: 0.75;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 4rem;
 }
+@media screen and (min-width: 500px) {
+  h2 {
+    font-size: 4rem;
+  }
+}
+
+p{
+  color: white;
+  opacity: 0.8;
+  margin-bottom: 3rem;
+  font-size: 1rem;
+}
+
 
 .btn {
   text-transform: uppercase;
@@ -108,7 +132,7 @@ h2 {
   border-radius: var(--radius);
 }
 .btn:hover {
-  color: var(--clr-primary-1);
+  font-size: ;
   background: var(--clr-primary-8);
 }
 .center-btn {
@@ -184,12 +208,32 @@ Pages
   padding-top: 5rem;
   height: 100vh;
   position: relative;
-  background: rgb(146, 109, 136);
-  background: linear-gradient(
-    146deg,
-    rgba(146, 109, 136, 1) 52%,
-    rgba(66, 149, 156, 1) 100%
-  );
+  background-image: url("../assets/s1.png"), url("../assets/s2.png"),
+  url("../assets/s3.png");
+background-attachment: fixed;
+  display: grid;
+  place-items: center;
+}
+.projects-page {
+  min-height: calc(100vh - 9rem);
+  margin-top: -5rem;
+  padding-top: 5rem;
+  position: relative;
+  background-image: url("../assets/s1.png"), url("../assets/s2.png"),
+    url("../assets/s3.png");
+  background-attachment: fixed;
+}
+
+.about-page{
+  min-height: calc(100vh - 9rem);
+  margin-top: -5rem;
+  padding-top: 5rem;
+  position: relative;
+  background-image: url("../assets/s1.png"), url("../assets/s2.png"),
+    url("../assets/s3.png");
+  background-attachment: fixed;
+  position: relative;
+
 }
 
 /*
@@ -321,7 +365,7 @@ Sidebar
   color: white;
   letter-spacing: var(--spacing);
   margin-bottom: 0.5rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
   transition: var(--transition);
   border-radius: var(--radius);
   opacity: 0.8;
@@ -624,6 +668,8 @@ Projects
     url("../assets/s3.png");
   background-attachment: fixed;
   position: relative;
+
+
 }
 
 .project {
@@ -798,4 +844,107 @@ Projects
     backdrop-filter: blur(10px);
     text-align: right;
   }
+}
+
+
+/*
+===============
+Contact Page/Order Page
+===============
+*/
+
+.contact-info p {
+  text-align: left;
+  margin-left: 2rem;
+  font-weight: bold;
+  color: var(--clr-white);
+  opacity: 0.8;
+  font-size: 15px;
+  letter-spacing: 0.1rem;
+}
+
+.contact-line {
+  display: flex;
+  column-gap: 2rem;
+  align-items: center;
+}
+.contact-form {
+  background: inherit;
+  overflow: hidden;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  width: 90vw;
+  max-width: 35rem;
+}
+.contact-form:hover {
+  box-shadow: var(--dark-shadow);
+}
+.contact-form h3 {
+  color: white;
+  opacity: 0.8;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.contact-form h4 {
+  color: white;
+  opacity: 0.9;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  margin-left: 2rem;
+}
+.form-group {
+  padding: 1rem 1.5rem;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  margin-bottom: 1.25rem;
+  background: var(--clr-grey-10);
+  opacity: 0.7;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+}
+.form-control::placeholder {
+  font-family: var(--ff-primary);
+  color: var(--clr-grey-1);
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+}
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: white;
+  background-color: transparent;
+  border-color: white;
+}
+
+.submit-btn:hover {
+  color: var(--clr-grey-8);
+  background: white;
+  opacity: 0.8;
+}
+
+/*
+=============== 
+Single Project Template
+===============
+*/
+
+.single-project{
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+
 }

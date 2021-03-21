@@ -42,7 +42,10 @@ module.exports = {
               family: `Open Sans`,
             },
             {
-              family: 'Montserrat',
+              family: 'Sacramento',
+            },
+            {
+              family: 'Rock Salt',
             }
           ],
         },

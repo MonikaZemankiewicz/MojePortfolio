@@ -1,11 +1,11 @@
 import React from "react"
-import { FaFacebookF, FaInstagram, FaRegEnvelope } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaRegEnvelope } from "react-icons/fa"
 
 const data = [
   {
     id: 1,
-    icon: <FaInstagram className="social-icon"></FaInstagram>,
-    url: "https://www.instagram.com/",
+    icon: <FaGithub className="social-icon"></FaGithub>,
+    url: "https://github.com/MonikaZemankiewicz",
   },
   {
     id: 2,
@@ -14,8 +14,8 @@ const data = [
   },
   {
     id: 3,
-    icon: <FaFacebookF className="social-icon"></FaFacebookF>,
-    url: "https://www.facebook.com",
+    icon: <FaLinkedin className="social-icon"></FaLinkedin>,
+    url: "https://www.linkedin.com/in/monika-zemankiewicz-675920207/",
   },
 ]
 const links = data.map(link => {
