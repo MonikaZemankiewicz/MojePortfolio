@@ -1,5 +1,5 @@
 import React from "react"
-import { FaAlignRight } from "react-icons/fa"
+import { FaAlignLeft, FaAlignRight } from "react-icons/fa"
 import PageLinks from "../constants/links"
 const Navbar = ({ toggleSidebar }) => {
   return (
@@ -12,7 +12,7 @@ const Navbar = ({ toggleSidebar }) => {
             aria-label="toggle"
             onClick={toggleSidebar}
           >
-            <FaAlignRight></FaAlignRight>
+            <FaAlignLeft></FaAlignLeft>
           </button>
         </div>
         <PageLinks styleClass="nav-links"></PageLinks>
