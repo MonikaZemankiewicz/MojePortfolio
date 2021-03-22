@@ -24,7 +24,10 @@ const Hero = () => {
     <header className="hero">
       <div className="snow">
         <div className="hero-img-container">
-          <Image fluid={fluid} className="hero-img"></Image>
+          <a href="https://www.canva.com/design/DAEYjX89iWQ/qVWLvJoLTJDM7qkQW-83Fw/view?website#4">
+            {" "}
+            <Image fluid={fluid} className="hero-img"></Image>
+          </a>
         </div>
         <h2>Hi, I'm Monika. Welcome to my portfolio. </h2>
         {/*<h4 class="neon">Hi, I'm Monika. Welcome to my portfolio</h4>*/}

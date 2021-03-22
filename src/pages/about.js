@@ -9,8 +9,8 @@ const AboutPage = ({
 }) => {
   return (
     <Layout>
-       <section className="about-page">
-         <h2>In creation :)</h2>
+      <section className="about-page">
+        <h2>In creation :)</h2>
       </section>
     </Layout>
   )
