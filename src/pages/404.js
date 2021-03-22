@@ -6,11 +6,8 @@ const Error = () => {
   return (
     <Layout>
       <main className="error-page">
-        <div className="error-container">
-          <h2>That page doesn't exist</h2>
-          <Link to="/" className="btn">
-            go to the home page
-          </Link>
+        <div className="error-section">
+          <h2>This page doesn't exist</h2>
         </div>
       </main>
     </Layout>

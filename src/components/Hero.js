@@ -27,6 +27,7 @@ const Hero = () => {
           <Image fluid={fluid} className="hero-img"></Image>
         </div>
         <h2>Hi, I'm Monika. Welcome to my portfolio. </h2>
+        {/*<h4 class="neon">Hi, I'm Monika. Welcome to my portfolio</h4>*/}
       </div>
     </header>
   )
