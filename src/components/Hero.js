@@ -24,7 +24,7 @@ const Hero = () => {
     <header className="hero">
       <div className="snow">
         <div className="hero-img-container">
-          <a href="https://www.canva.com/design/DAEYjX89iWQ/qVWLvJoLTJDM7qkQW-83Fw/view?website#4">
+          <a href="https://www.canva.com/design/DAEYjX89iWQ/view">
             {" "}
             <Image fluid={fluid} className="hero-img"></Image>
           </a>
