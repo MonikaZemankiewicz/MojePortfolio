@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import Image from "gatsby-image"
 import { FaGithub, FaGlobe } from "react-icons/fa"
+import { graphql } from "gatsby"
 
 const ProjectTemplate = ({
   data: {

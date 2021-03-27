@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import Image from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
+import Courses from "../components/Courses"
 
 const query = graphql`
   {
@@ -37,6 +38,7 @@ const About = () => {
             </p>
           </div>
         </section>
+        {/*<Courses />*/}
       </section>
     </Layout>
   )
