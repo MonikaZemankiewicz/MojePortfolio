@@ -6,9 +6,9 @@ import { FaGithub, FaGlobe } from "react-icons/fa"
 const Project = ({ title, github, tags, url, img, slug }) => {
   return (
     <article className="project">
-      <div className="project-img">
+      <div className="project-img-container">
         <a href={url}>
-          <Image fluid={img.fluid} className="p-img" />
+          <Image fluid={img.fluid} className="project-img" />
         </a>
       </div>
 

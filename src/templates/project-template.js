@@ -13,9 +13,9 @@ const ProjectTemplate = ({
       <section className="projects-page">
         <section className="single-project">
           <article className="project">
-            <div className="project-img">
+            <div className="project-img-container">
               <a href={url}>
-                <Image fluid={img.fluid} className="p-img" />
+                <Image fluid={img.fluid} className="project-img" />
               </a>
             </div>
 

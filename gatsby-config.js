@@ -15,6 +15,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -29,6 +30,7 @@ module.exports = {
         path: `${__dirname}/src/assets/`,
       },
     },
+
     {
       resolve: `gatsby-plugin-webfonts`,
       options: {
@@ -42,11 +44,11 @@ module.exports = {
               family: `Open Sans`,
             },
             {
-              family: 'Sacramento',
+              family: "Sacramento",
             },
             {
-              family: 'Rock Salt',
-            }
+              family: "Rock Salt",
+            },
           ],
         },
       },

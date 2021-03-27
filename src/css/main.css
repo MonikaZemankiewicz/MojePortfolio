@@ -39,6 +39,12 @@ body {
   line-height: 2;
   font-size: 0.875rem;
   margin-top: 5rem;
+  background: rgb(146, 109, 136);
+  background: linear-gradient(
+    146deg,
+    rgba(146, 109, 136, 1) 52%,
+    rgba(66, 149, 156, 1) 100%
+  );
 }
 
 /* width */
@@ -113,7 +119,6 @@ h2 {
 p {
   color: white;
   opacity: 0.8;
-  margin-bottom: 3rem;
   font-size: 1rem;
 }
 
@@ -186,39 +191,10 @@ Pages
     rgba(66, 149, 156, 1) 100%
   );
 }
-.contact-page {
-  min-height: calc(100vh - 5rem - 9rem);
-  margin-top: -5rem;
-  padding-top: 5rem;
-  height: 100vh;
-  position: relative;
-  background-image: url("../assets/s1.png"), url("../assets/s2.png"),
-    url("../assets/s3.png");
-  background-attachment: fixed;
-  display: grid;
-  place-items: center;
-}
-.projects-page {
-  min-height: calc(100vh - 9rem);
-  margin-top: -5rem;
-  padding-top: 5rem;
-  position: relative;
-  background-image: url("../assets/s1.png"), url("../assets/s2.png"),
-    url("../assets/s3.png");
-  background-attachment: fixed;
-}
 
-.about-page {
-  min-height: calc(100vh - 9rem);
-  margin-top: -5rem;
-  padding-top: 5rem;
-  position: relative;
-  background-image: url("../assets/s1.png"), url("../assets/s2.png"),
-    url("../assets/s3.png");
-  background-attachment: fixed;
-  position: relative;
-}
-
+.about-page,
+.projects-page,
+.contact-page,
 .error-page {
   min-height: calc(100vh - 9rem);
   margin-top: -5rem;
@@ -227,7 +203,11 @@ Pages
   background-image: url("../assets/s1.png"), url("../assets/s2.png"),
     url("../assets/s3.png");
   background-attachment: fixed;
-  position: relative;
+}
+
+.contact-page {
+  display: grid;
+  place-items: center;
 }
 
 /*
@@ -653,6 +633,119 @@ Hero
 
 /*
 =============== 
+About Page
+===============
+*/
+
+.about-section {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding-bottom: 2rem;
+}
+
+.about-img {
+  width: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.about-info {
+  background: transparent;
+  overflow: hidden;
+  border-radius: 0.4rem;
+  padding: 0.8rem 1.1rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.about-page h3 {
+  font-size: 1.4rem;
+  letter-spacing: var(--spacing);
+  color: white;
+  -webkit-filter: drop-shadow(10px 10px 10px rgb(153, 148, 148));
+  filter: drop-shadow(10px 10px 10px rgb(153, 148, 148));
+  opacity: 0.8;
+  text-align: left;
+}
+
+.about-page p {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+@media screen and (min-width: 600px) {
+  .about-page h3 {
+    font-size: 1.6rem;
+  }
+
+  .about-info {
+    padding: 1rem 1.4rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .about-section {
+    margin-top: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 5rem;
+    display: grid;
+    grid-gap: 60px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    align-items: center;
+  }
+
+  .about-img {
+    width: 20rem;
+    grid-column: 1 / 2;
+    grid-row: 1;
+  }
+
+  .about-info {
+    grid-column: 2 / 4;
+    grid-row: 1;
+  }
+
+  .about-page h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .about-section {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    grid-gap: 80px;
+  }
+
+  .about-img {
+    width: 25rem;
+  }
+
+  .about-page h3 {
+    font-size: 2rem;
+  }
+
+  .about-page p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1520px) {
+  .about-section {
+    padding-left: 9rem;
+    padding-right: 9rem;
+    grid-gap: 120px;
+  }
+}
+
+/*
+=============== 
 Projects
 ===============
 */
@@ -670,19 +763,19 @@ Projects
   margin-bottom: 4rem;
 }
 
-.p-img {
-  height: 20rem;
+.project-img {
+  height: 14rem;
 }
 
-.project-img {
+.project-img-container {
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
-  height: 20rem;
+  height: 14rem;
   z-index: 1;
   transition: all 0.5s ease-in-out;
 }
 
-.project-img:hover {
+.project-img-container:hover {
   transform: scale(1.02);
 }
 
@@ -704,8 +797,8 @@ Projects
   color: white;
   opacity: 0.9;
   font-weight: 800;
-  margin-bottom: 4rem;
-  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
 }
 .project-stack {
   margin-bottom: 1rem;
@@ -718,7 +811,7 @@ Projects
   padding-right: 0.2rem;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 .about-stack span {
   margin-top: 0.5rem;
@@ -759,20 +852,38 @@ Projects
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (min-width: 576px) {
-  .project-img {
-    height: 22rem;
+@media screen and (min-width: 420px) {
+  .project-img-container {
+    height: 16rem;
   }
-  .p-img {
-    height: 22rem;
+  .project-img {
+    height: 16rem;
   }
 }
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 576px) {
+  .project-img-container {
+    height: 22rem;
+  }
   .project-img {
     height: 22rem;
   }
 
-  .p-img {
+  .project-info h3 {
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+  }
+
+  .project-stack span {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .project-img-container {
+    height: 22rem;
+  }
+
+  .project-img {
     height: 22rem;
   }
 }
@@ -782,7 +893,7 @@ Projects
     grid-template-rows: repeat(12, 0.1fr);
     align-items: center;
   }
-  .project-img {
+  .project-img-container {
     grid-column: 1 / span 8;
     /* grid-column-end: 8; */
     grid-row: 1 / 12;
@@ -791,11 +902,11 @@ Projects
     box-shadow: var(--dark-shadow);
   }
 
-  .p-img {
+  .project-img {
     height: 30rem;
   }
 
-  .project-img:hover {
+  .project-img-container:hover {
     transform: scale(0.95);
   }
   .project-info {
@@ -805,7 +916,7 @@ Projects
     grid-column: 8 /12;
     grid-row: 2 / 8;
   }
-  .project:nth-of-type(even) .project-img {
+  .project:nth-of-type(even) .project-img-container {
     grid-column: 5 / -1;
     grid-row: 1 / 12;
   }
@@ -835,6 +946,9 @@ Projects
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
     text-align: right;
+  }
+  .project-info h3 {
+    margin-bottom: 4rem;
   }
 }
 
@@ -869,6 +983,7 @@ Contact Page/Order Page
   backdrop-filter: blur(10px);
   width: 90vw;
   max-width: 35rem;
+  margin-bottom: 2rem;
 }
 .contact-form:hover {
   box-shadow: var(--dark-shadow);
@@ -957,19 +1072,3 @@ Single Project Template
   margin-bottom: 3rem;
   margin-top: -2rem;
 }
-
-/*h4 {
-  font-weight: 400;
-  text-align: center;
-  font-family: var(--ff-secondary);
-  font-size: 3rem;
-  margin-top: 4rem;
-}
-.neon {
-  color: #fff;
-  opacity: 0.8;
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff,
-    0 0 40px rgb(201, 154, 240), 0 0 80px rgb(201, 154, 240),
-    0 0 90px rgb(201, 154, 240), 0 0 100px #0ff, 0 0 150px rgb(201, 154, 240);
-}
-*/

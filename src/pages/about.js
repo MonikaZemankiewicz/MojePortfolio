@@ -1,41 +1,45 @@
 import React from "react"
 import Layout from "../components/Layout"
-import { graphql } from "gatsby"
+import Image from "gatsby-image"
+import { graphql, useStaticQuery } from "gatsby"
 
-const AboutPage = ({
-  data: {
-    allContentfulProjects: { nodes: projects },
-  },
-}) => {
+const query = graphql`
+  {
+    file(relativePath: { eq: "profile-picture.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
+
+const About = () => {
+  const {
+    file: {
+      childImageSharp: { fluid },
+    },
+  } = useStaticQuery(query)
   return (
     <Layout>
       <section className="about-page">
-        <h2>In creation :)</h2>
+        <section className="about-section">
+          <Image fluid={fluid} className="about-img"></Image>
+          <div className="about-info">
+            <h3> About me</h3>
+            <p>
+              I'm a computer science student at Wroclaw University of Science
+              and Technology. I've been interested in programming since high
+              school. In the past few years I've done many projects using
+              various technologies. I'm especially interested in web
+              technologies, design and UI/UX.
+            </p>
+          </div>
+        </section>
       </section>
     </Layout>
   )
 }
 
-export const query = graphql`
-  {
-    allContentfulProjects(sort: { order: ASC, fields: number }) {
-      nodes {
-        title
-        description {
-          description
-        }
-        img {
-          fluid {
-            ...GatsbyContentfulFluid
-          }
-        }
-        number
-        slug
-        url
-        tags
-        github
-      }
-    }
-  }
-`
-export default AboutPage
+export default About

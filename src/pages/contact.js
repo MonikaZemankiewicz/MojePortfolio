@@ -1,7 +1,5 @@
 import React from "react"
 import Layout from "../components/Layout"
-import { FaRegEnvelope } from "react-icons/fa"
-
 
 const Contact = () => {
   return (

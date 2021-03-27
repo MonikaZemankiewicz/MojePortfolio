@@ -1,6 +1,5 @@
 import React from "react"
 import Project from "./Project"
-import { Link } from "gatsby"
 
 const Projects = ({ projects }) => {
   return (
