@@ -122,9 +122,9 @@ p {
   font-size: 1rem;
 }
 
-button:focus {
+/* button:focus {
   outline: none;
-}
+} */
 
 .btn {
   text-transform: uppercase;
@@ -753,7 +753,7 @@ About Page
 Courses
 ===============
 */
-.courses-section {
+/* .courses-section {
   backdrop-filter: blur(10px);
 }
 .courses-section .section-center {
@@ -867,7 +867,7 @@ article.nextSlide {
 
 button:focus {
   outline: none;
-}
+} */
 
 /*
 =============== 
