@@ -100,7 +100,7 @@ h2 {
   font-size: 2rem;
   letter-spacing: 0.1rem;
   -webkit-filter: drop-shadow(5px 5px 5px rgb(160, 151, 151));
-  filter: drop-shadow(5px 5px 5px rgb(160, 151, 151));
+  filter: drop-shadow(2px 2px 2px rgb(160, 151, 151));
   opacity: 0.75;
   margin-left: 1rem;
   margin-right: 1rem;
