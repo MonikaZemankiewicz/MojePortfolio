@@ -184,12 +184,8 @@ Pages
 */
 
 .index-page {
-  background: rgb(146, 109, 136);
-  background: linear-gradient(
-    146deg,
-    rgba(146, 109, 136, 1) 52%,
-    rgba(66, 149, 156, 1) 100%
-  );
+  background: rgb(90,77,128);
+  background: radial-gradient(circle, rgba(90,77,128,1) 4%, rgba(2,0,36,1) 80%);
 }
 
 .about-page,
@@ -480,12 +476,8 @@ Footer
   text-align: center;
   display: grid;
   place-items: center;
-  background: rgb(146, 109, 136);
-  background: radial-gradient(
-    circle,
-    rgba(146, 109, 136, 0.85) 52%,
-    rgba(66, 149, 156, 0.85) 100%
-  );
+  background: rgb(90,77,128);
+  background: radial-gradient(circle, rgba(90,77,128,1) 4%, rgba(2,0,36,1) 80%);
 
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   background: rgba(255, 255, 255, 0.15);
@@ -519,12 +511,8 @@ Hero
   padding-top: 5rem;
   height: 100vh;
   position: relative;
-  background: rgb(146, 109, 136);
-  background: linear-gradient(
-    146deg,
-    rgba(146, 109, 136, 1) 52%,
-    rgba(66, 149, 156, 1) 100%
-  );
+  background: rgb(90,77,128);
+background: radial-gradient(circle, rgba(90,77,128,1) 4%, rgba(2,0,36,1) 80%);
 }
 
 .hero-img-container {
