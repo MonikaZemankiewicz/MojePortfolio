@@ -39,12 +39,8 @@ body {
   line-height: 2;
   font-size: 0.875rem;
   margin-top: 5rem;
-  background: rgb(146, 109, 136);
-  background: linear-gradient(
-    146deg,
-    rgba(146, 109, 136, 1) 52%,
-    rgba(66, 149, 156, 1) 100%
-  );
+  background: rgb(90,77,128);
+  background: radial-gradient(circle, rgba(90,77,128,1) 4%, rgba(2,0,36,1) 80%);
 }
 
 /* width */
@@ -311,12 +307,8 @@ Sidebar
 ===============
 */
 .sidebar {
-  background: rgb(146, 109, 136);
-  background: radial-gradient(
-    circle,
-    rgba(146, 109, 136, 1) 43%,
-    rgba(66, 149, 156, 1) 100%
-  );
+  background: rgb(90,77,128);
+  background: radial-gradient(circle, rgba(90,77,128,1) 4%, rgba(2,0,36,1) 80%);
   position: fixed;
   top: 0;
   left: 0;
